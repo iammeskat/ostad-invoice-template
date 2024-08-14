@@ -1,0 +1,241 @@
+<style>
+	* {
+		font-family: Arial, serif;
+	}
+	p,
+	caption {
+		margin: 0px;
+	}
+	.doc-body {
+		width: 935px !important;
+		overflow: hidden;
+		height: 1210px;
+		padding: 56px;
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(254, 253, 252);
+	}
+
+	.header {
+		width: '100%';
+		display: flex;
+		justify-content: space-between;
+	}
+	.text-box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.text-title {
+		letter-spacing: -0.07px;
+		word-spacing: -0.02px;
+		font-size: 20px;
+		color: #000;
+		font-weight: 600;
+		white-space: pre;
+		overflow: visible;
+		line-height: 1.5;
+		margin: 0px;
+	}
+
+	.text,
+	td {
+		margin: 0px;
+		letter-spacing: -0.29px;
+		word-spacing: 0.01px;
+		font-size: 20px;
+		color: #000;
+		/* white-space: pre; */
+		overflow: visible;
+		line-height: 1.5;
+	}
+
+	table {
+		margin-top: 28px;
+	}
+	table,
+	th,
+	td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	}
+	td {
+		padding: 6px;
+		vertical-align: baseline;
+	}
+	.td-last {
+		width: 120px;
+		text-align: end;
+	}
+
+	.pricing {
+		width: 50%;
+		margin-left: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 6px;
+	}
+	.pricing-item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.pricing-item p {
+		padding: 6px;
+	}
+</style>
+
+<div class="doc-body">
+	<!-- start company info  -->
+	<div class="header">
+		<div class="text-box">
+			<p class="text-title">Ostad Limited</p>
+			<p class="text">Ka-6/a, Navana Sylvania, Baridhara Road,</p>
+			<p class="text">Nadda, Gulshan-2, Dhaka 1212</p>
+			<p class="text">01960-999915</p>
+			<p class="text">support@ostad.app</p>
+			<p class="text">www.ostad.app</p>
+		</div>
+		<div>
+			<img
+				style="width: 200px; height: auto"
+				src="https://cdn.ostad.app/public/upload/2024-03-20T04-26-32.799Z-ostad_logo_light@512x%20(2).png"
+			/>
+		</div>
+	</div>
+	<!-- end company info  -->
+
+	<!-- start billing address & invoice  -->
+	<div
+		class="header"
+		style="margin-top: 56px"
+	>
+		<div class="text-box">
+			<p class="text-title">Bill To</p>
+			<p class="text">Learner Name</p>
+			<p class="text">01131925511 (Veriﬁed)</p>
+			<p class="text">email@learner.com (Veriﬁed)</p>
+		</div>
+		<div class="text-box">
+			<p class="text">
+				<b class="text-title">Invoice: </b>
+				BOOKING_IDX
+			</p>
+			<p class="text">
+				<b class="text-title">Date: </b>
+				07 July 2024
+			</p>
+			<p class="text">
+				<b class="text-title">Due Date: </b>
+				05 September 2024
+			</p>
+		</div>
+	</div>
+	<!-- end billing address & invoice  -->
+
+	<!-- start items table  -->
+	<table>
+		<tbody>
+			<tr>
+				<td style="width: 150px">Date</td>
+				<td>Description</td>
+				<td class="td-last">Amount</td>
+			</tr>
+
+			<tr>
+				<td style="width: 150px">07 July 2024</td>
+				<td>
+					Course: WordPress Theme Development <br />
+					Batch: WORDPRESS THEME 3
+				</td>
+				<td class="td-last">৳ 8000</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- end items table  -->
+
+	<!-- start pricing table  -->
+	<div style="width: 100%; margin-top: 28px">
+		<div class="pricing text">
+			<div class="pricing-item">
+				<p>Subtotal</p>
+				<p>৳ 8000</p>
+			</div>
+			<div class="pricing-item">
+				<p>Discount<br />Promo: (EIDERKHUSHI)</p>
+				<p>(-) ৳ 2000</p>
+			</div>
+			<div class="pricing-item">
+				<p>Total</p>
+				<p>৳ 6000</p>
+			</div>
+			<div class="pricing-item">
+				<p>Paid</p>
+				<p>৳ 6000</p>
+			</div>
+			<div
+				class="pricing-item"
+				style="background-color: rgb(43, 42, 42); color: #fff"
+			>
+				<p>Total Due</p>
+				<p
+					style="
+						border-left: 1px solid #fff;
+						width: 150px;
+						text-align: end;
+					"
+				>
+					৳ 0
+				</p>
+			</div>
+		</div>
+	</div>
+	<!-- end pricing table  -->
+
+	<!-- start transaction history  -->
+	<table>
+		<caption
+			style="
+				margin: 0px;
+				padding: 0px;
+				text-align: start;
+				margin-bottom: 8px;
+				font-weight: 600;
+				font-size: 20px;
+			"
+		>
+			Transaction History
+		</caption>
+		<tbody>
+			<tr>
+				<td style="width: 33.33%">Date</td>
+				<td style="width: 33.33%">Method</td>
+				<td style="width: 33.33%">Paid Amount</td>
+			</tr>
+
+			<tr>
+				<td style="width: 33.33%">07 July 2024 05:30 AM</td>
+				<td style="width: 33.33%">bKash</td>
+				<td style="width: 33.33%">৳2000</td>
+			</tr>
+
+			<tr>
+				<td style="width: 33.33%">07 July 2024 05:30 AM</td>
+				<td style="width: 33.33%">bKash</td>
+				<td style="width: 33.33%">৳2000</td>
+			</tr>
+
+			<tr>
+				<td style="width: 33.33%">07 July 2024 05:30 AM</td>
+				<td style="width: 33.33%">bKash</td>
+				<td style="width: 33.33%">৳2000</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- end transaction history  -->
+
+	<p style="margin-top: 28px">
+		This document was generated on August 13, 2024, at 12:18 PM (GMT +06:00,
+		Bangladesh Time)
+	</p>
+</div>
